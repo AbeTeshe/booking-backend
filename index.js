@@ -13,7 +13,7 @@ dotenv.config();
 
 
 
-mongoose.connect(process.env.MONGO_URL)
+mongoose.connect("mongodb+srv://Abe_user:abe%401234@test-cluster.r34xa.mongodb.net/booking?retryWrites=true&w=majority")
         .then(() => console.log("Database Connected Successfully!"))
         .catch((err) => {
             console.log(err.message);
